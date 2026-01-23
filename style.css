@@ -1,0 +1,173 @@
+* 
+{
+font-family:sans-serif;
+box-sizing:border-box;
+padding:0;
+margin:0;
+outline:none;
+}
+
+body 
+{
+width:100%;
+height:100vh;
+background-image:url(./images/BackgroundMapWorld.png);
+background-repeat:no-repeat;
+background-size:cover;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+/*Container Style*/
+.Container 
+{
+width:700px;
+height:400px;
+background:linear-gradient(150deg, #243041, #243041, #222a36, #1e232b);
+padding:5px 10px;
+border-radius:9px;
+}
+
+/*Form Style*/
+.Container .formSection 
+{
+width:100%;
+display:flex;
+flex-direction:column;
+align-items:center;
+height:100%;
+}
+
+/*Section Style*/
+.formSection .Sections 
+{
+width:100%;
+height:45%;
+display:flex;
+margin:10px 0;
+padding:0 10px;
+}
+
+.diferent 
+{
+position:relative;
+}
+
+/*Style Select Idioma para escrever*/
+.IdiomaEscrita
+{
+position:absolute;
+bottom:-10px;
+right:20px;
+padding:5px;
+border:none;
+color:#fff;
+font-weight:bold;
+background:#ACB1D6;
+color:#222a36;
+display:flex;
+}
+
+/*Section Selecao Value Unic*/
+.ValueUnic 
+{
+height:10% !important;
+display:flex;
+align-items:center;
+}
+
+/*Seção Traducao Style*/
+.specialSection 
+{
+flex-direction:column !important;
+}
+
+/*Rótulo Style*/
+.formSection .Sections label  
+{
+color:#a6b2ff;
+font-size:18px;
+}
+
+/*Area Texto Style*/
+.formSection .Sections textarea 
+{
+resize:none;
+background:none;
+width:100%;
+height:100%;
+outline:none;
+font-size:22px;
+color:#232F41;
+margin:10px 0;
+border:none;
+background:#adb1d6;
+padding: 5px;
+border-radius:5px;
+}
+
+/*Placeholder text style*/
+.formSection .Sections textarea::placeholder 
+{
+color:#232F41;
+font-size:23px;
+}
+
+/*Selecao Style*/
+.Option-Style 
+{
+width:80%;
+outline:none;
+border:none;
+background:#adb1d6;
+color:#232F41;
+font-weight:bold;
+padding:10px 0;
+border-radius:5px;
+}
+
+/*Opção Style*/
+.Option-Style option
+{
+padding:10px 0;
+display:flex;
+font-weight:bold;
+}
+
+/*Button Translate Style*/
+.translateStyle,
+.microStyle
+{
+border:none;
+background:none;
+cursor:pointer;
+margin:0 10px;
+padding:5px;
+border-radius:50%;
+}
+
+/*Background somente para o microfone*/
+.BackgroundMicro
+{
+background:#ADB1D6;
+}
+
+/*Image Translate Style*/
+.translateStyle img,
+.microStyle img
+{
+width:40px;
+height:40px;
+transition:.2s ease-in;
+}
+
+/*Escala de animação da imagem google tradutor*/
+.animationGoogle,
+.animationMicro 
+{
+transition:.2s ease-in;
+transform:scale(1.1);
+}
+ 
+ 

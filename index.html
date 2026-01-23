@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Tradutor Anônimo</title>
+</head>
+
+<body>
+
+    <div class="Container">
+        <form class="formSection" action="post">
+            <section class="Sections diferent">
+                <textarea class="valueUser" maxlength="99" placeholder="Digite o texto de um idioma para traduzir" aria-expanded="true" id=""></textarea>
+                <select class="IdiomaEscrita" name="reload" id="getIdioma">
+                    <option>Escrever|Idioma</option>
+                    <option value="pt-br">Português</option>
+                    <option value="en-us">Inglês</option>
+                    <option value="ru">Russo</option>
+                    <option value="it">Italiano</option>
+                    <option value="ja">Japônes</option>
+                    <option value="fr">Frânces</option>
+                    <option value="es">Espanhol</option>
+                </select>
+            </section>
+
+            <section class="Sections ValueUnic">
+                <select  class="Option-Style" name="" id="EscolheOption">
+                    <option value="en">Inglês</option>
+                    <option value="ru">Russo</option>
+                    <option value="it">Italiano</option>
+                    <option value="ja">Japonês</option>
+                    <option value="fr">Francês</option>
+                    <option value="es">Espanhol</option>
+                    <option value="pt">Português</option>
+                </select>
+
+                <button onclick="Traduzir()" onmouseenter="EntrarGoogle()" onmouseleave="SairGoogle()" class="translateStyle" type="button">
+                    <img class="translateClass" title="Traduzir" src="./images/google_translate_icon.png"
+                        alt="googletranslate_img.png" />
+                </button>
+                <button onclick="ExecutarMicro()" onmouseenter="EntrarMicro()" onmouseleave="SairMicro()" class="microStyle" type="button">
+                    <img class="microClass" title="Microfone" src="./images//Microphone-Icon.png" alt="microphone.png">
+                </button>
+
+            </section>
+
+            <section class="Sections specialSection">
+                <label>Tradução: </label>
+                <textarea class="ReciveText" disabled placeholder="Tradução de idioma" minlength="0" maxlength="99" id=""></textarea>
+            </section>
+        </form>
+    </div>
+
+    
+</body>
+
+<script src="./script.js"></script>
+
+</html>
