@@ -81,7 +81,7 @@ try {
 const getURL = await fetch(`https://api.mymemory.translated.net/get?q=${valueInText.value}!&langpair=${lenguage||"pt-br"}|${getValue||"en"}`);
 const transformURL = await getURL.json();
 const getTextTransform = transformURL.responseData.translatedText;
-valueInText.innerText = getTextTransform;
+reciveText.innerText = getTextTransform;
 }
 catch(err) 
 {
@@ -104,7 +104,7 @@ console.log("Escutando...");
 recognition.onresult = (event) => {
 /**O Texto fica dentro do objeto event**/
 const transcript = event.results[0][0].transcript; 
-reciveText.value = transcript;
+valueInText.value = transcript;
 
 /**Já faz a chamada para api my memmory */
 EscutaFala(recognition.lang);
