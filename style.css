@@ -145,12 +145,126 @@ cursor:pointer;
 margin:0 10px;
 padding:5px;
 border-radius:50%;
+z-index:1
 }
 
 /*Background somente para o microfone*/
 .BackgroundMicro
 {
 background:#ADB1D6;
+box-shadow:-2px 2px 0 #3f4d63;
+position:relative;
+}
+ 
+.MovimentosCirculares::before
+{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+border-radius:50%;
+animation:Circular .7s ease-in infinite;
+}
+
+@keyframes Circular 
+{
+0%
+{
+background:#a1a5c5;
+transform:scale(0.2)
+}
+
+25%
+{
+background:#a1a5c5;
+transform:scale(0.4);
+}
+
+50% 
+{
+background:#a1a5c5;
+transform:scale(0.6);
+}
+
+75% 
+{
+background:#a1a5c5;
+transform:scale(0.8);
+}
+
+100% 
+{
+background:#a1a5c5;
+transform:scale(1);
+}
+}
+ 
+.notSpeak
+{
+animation:Nothing .5s ease-in infinite;
+}
+
+@keyframes Nothing 
+{
+0%
+{
+transform:scale(1);
+}
+
+25% 
+{
+transform:scale(0.98);
+}
+
+50%
+{
+transform:scale(1);
+}
+
+75% 
+{
+transform:scale(0.97);
+}
+
+100% 
+{
+transform:scale(1);
+}
+}
+
+.Speak 
+{
+animation:WordSpeak .5s ease-in infinite;
+}
+
+@keyframes WordSpeak 
+{
+0% 
+{
+tranform:scale(1);
+}
+
+25% 
+{
+tranform:scale(1.1);
+}
+
+50% 
+{
+tranform:scale(1.15);
+}
+
+75% 
+{
+tranform:scale(1.12);
+}
+
+100% 
+{
+tranform:scale(1.17);
+}
 }
 
 /*Image Translate Style*/
