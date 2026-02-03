@@ -234,39 +234,6 @@ transform:scale(1);
 }
 }
 
-.Speak 
-{
-animation:WordSpeak .5s ease-in infinite;
-}
-
-@keyframes WordSpeak 
-{
-0% 
-{
-tranform:scale(1);
-}
-
-25% 
-{
-tranform:scale(1.1);
-}
-
-50% 
-{
-tranform:scale(1.15);
-}
-
-75% 
-{
-tranform:scale(1.12);
-}
-
-100% 
-{
-tranform:scale(1.17);
-}
-}
-
 /*Image Translate Style*/
 .translateStyle img,
 .microStyle img

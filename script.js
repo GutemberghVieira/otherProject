@@ -155,7 +155,6 @@ recognition.lang = `${getEscrita||"pt-br"}`; // Define a Lingua de Entrada(engli
 recognition.interimResults = false; //Define se quer resultados parciais enquanto fala
 recognition.maxAlternatives = 1; //Quantidades de opções de retornos?
 
-
 if(controlStart === "Start")
 {
 recognition.start();
@@ -169,11 +168,6 @@ recognition.onresult = (event) => {
 
 /**O Texto fica dentro do objeto event**/
 const transcript = event.results[0][0].transcript; 
-
-if(transcript !== "")
-{
-getMicro.classList.add("Speak");
-}
 
 valueInText.value = transcript;
 /**Já faz a chamada para api my memmory */
